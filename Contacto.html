@@ -1,0 +1,80 @@
+<!-- Página de contacto de NovaDrive Motors -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>Contacto | NovaDrive Motors</title> <!-- Título de la pestaña -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilos -->
+  <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+</head>
+<body>
+  <!-- Encabezado con logo y menú de navegación -->
+  <header>
+    <div class="logo">NovaDrive Motors</div> <!-- Logo de la empresa -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+        <li><a href="productos.html">Productos y Servicios</a></li> <!-- Enlace a productos/servicios -->
+        <li><a href="Contacto.html" class="active">Contacto</a></li> <!-- Enlace a contacto (activo) -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal (Hero) con título y subtítulo -->
+  <section class="hero">
+    <h1>Contáctanos</h1> <!-- Título principal -->
+    <p>Estamos aquí para ayudarte en cada paso de tu camino.</p> <!-- Subtítulo -->
+  </section>
+
+  <!-- Sección del formulario de contacto -->
+  <section class="contact">
+    <h2>Envíanos un mensaje</h2>
+    <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> <!-- Campo para el nombre -->
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required> <!-- Campo para el correo -->
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"> <!-- Campo para el teléfono -->
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea> <!-- Campo para el mensaje -->
+      </div>
+      <button type="submit" class="btn">Enviar</button> <!-- Botón para enviar el formulario -->
+    </form>
+  </section>
+
+  <!-- Sección de información de contacto -->
+  <section class="info">
+    <h2>Información</h2>
+    <p><strong>Dirección:</strong> Avenida Principal 123, Ciudad</p> <!-- Dirección -->
+    <p><strong>Teléfono:</strong> +502 1234 5678</p> <!-- Teléfono -->
+    <p><strong>Email:</strong> contacto@novadrive.com</p> <!-- Correo electrónico -->
+  </section>
+
+  <!-- Sección de mapa de ubicación -->
+  <section class="map">
+    <h2>Encuéntranos</h2>
+    <!-- Mapa de Google Maps incrustado -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30888.437929653173!2d-90.5380068!3d14.5959566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a162b49a51fd%3A0x179ee84e18f07f06!2sZool%C3%B3gico%20La%20Aurora!5e0!3m2!1ses-419!2sgt!4v1756157986508!5m2!1ses-419!2sgt" 
+      width="100%" height="350" style="border:0;" 
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Pie de página con derechos y redes sociales -->
+  <footer>
+    <p>© 2025 NovaDrive Motors | Innovación y estilo en cada viaje</p>
+    <div class="socials">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+    </div>
+  </footer>
+</body>
+</html>

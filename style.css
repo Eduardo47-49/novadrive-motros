@@ -1,0 +1,286 @@
+/* Colores corporativos pastel */
+:root {
+  --bg: #C9C1B0;         /* Fondo principal */
+  --text: #09443D;       /* Color de texto y header */
+  --section: #F0EDDF;    /* Fondo de secciones */
+  --accent: #6AB9A6;     /* Color de botones/acento */
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: var(--bg); /* Usa el color de fondo definido */
+  color: var(--text);    /* Usa el color de texto definido */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--text); /* Fondo oscuro para el header */
+  color: white;
+  display: flex;           /* Distribuye logo y menú en línea */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;        /* Quita viñetas */
+  display: flex;
+  gap: 1.5rem;             /* Espacio entre enlaces */
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--section); /* Fondo claro para sección principal */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--accent); /* Color de botón */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Secciones generales */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Grid de modelos */
+.models .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Features (Innovación y Estilo) */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.features div {
+  flex: 1 1 300px;
+  background: var(--section);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* CTA (Llamado a la acción) */
+.cta {
+  background: var(--text);
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.cta .btn {
+  background: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: var(--text);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Servicios y Productos */
+.services, .products {
+  padding: 3rem 2rem;
+}
+
+.services h2, .products h2 {
+  margin-bottom: 2rem;
+}
+
+.services .grid, .products .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.services .card, .products .card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.services .card img, .products .card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Contacto, Información y Mapa */
+.contact, .info, .map {
+  padding: 3rem 2rem;
+}
+
+.contact h2, .info h2, .map h2 {
+  margin-bottom: 1rem;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background: #09443D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: #0b5c52;
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* 📱 MEDIA QUERIES */
+
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
+/* Móviles (pantallas menores a 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact, .info, .map {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr; /* todos los inputs en una sola columna */
+  }
+
+  .form-group input, 
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  iframe {
+    height: 250px; /* mapa más compacto en móvil */
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+/* Fin del CSS */
